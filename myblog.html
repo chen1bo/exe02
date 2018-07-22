@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .dropbtn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(126, 122, 122);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 500px;
+    min-height: 700px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+
+.dropdown-content a {
+    color: rgb(185, 185, 185);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f7f1f1;
+}
+
+.background-left{
+    font-size:50px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align:center;
+}
+
+#hhh{
+    font-size:16px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    z-index: -2;
+}
+
+#Photo{
+    font-size:20px;
+    position: absolute;
+    left:700px;
+    width:200px;
+}
+
+
+.scroll{
+    font: size 10px;
+    text-align: center;
+    position:absolute;
+    top:500px;
+    left:700px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width:500px;
+}
+
+.photo-background{
+    color:rgb(253, 216, 171);
+    width:500px;
+    height: 300px;
+    left:700px;
+    top:20px;
+}
+
+#about{
+    position: absolute;
+    top:425px;left:700px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 20px;
+    width:200px;
+    border-bottom-style: solid;
+    border-bottom-color: #000
+}
+
+#Contact{
+    position: absolute;
+    top:1900px;
+    left:700px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 20px;
+    width:200px;
+}
+
+#mail{
+    font-size: 16px
+}
+
+#tel{
+    font-size:16px
+}
+
+#Journal{
+    position:absolute;
+    left:700px;
+    top:2500px
+}
+
+a:link {color:#000000;}     
+a:visited {color:rgb(158, 158, 158);} 
+a:hover {color:rgb(151, 135, 151);}  
+a:active {color:rgb(59, 59, 59);}
+
+#about{animation:myfirst 10s;
+	-moz-animation:myfirst 10s; /* Firefox */
+	-webkit-animation:myfirst 10s; /* Safari and Chrome */
+	-o-animation:myfirst 10s; /* Opera */}
+#photo{
+    animation:myfirst 10s;
+	-moz-animation:myfirst 10s; /* Firefox */
+	-webkit-animation:myfirst 10s; /* Safari and Chrome */
+	-o-animation:myfirst 10s; /* Opera */
+}
+@keyframes myfirst
+{
+	0%   {left: 750px;}
+
+	100% {left:700px;}
+}
+@-moz-keyframes myfirst
+{
+	0%   {left: 750px;}
+
+	100% {left:700px;}
+}
+@-webkit-keyframes myfirst
+{
+	0%   {left: 750px;}
+
+	100% {left:700px;}
+}
+@-o-keyframes myfirst
+{
+	0%   {left: 750px;}
+
+	100% {left:700px;}
+}
+            </style>
+    </head>
+    <body>  
+        <div style="position:fixed;border-bottom-style: solid;border-bottom-color: #000">        
+            <div class="dropdown">
+              <button class="dropbtn" >MENU</button>
+              <div class="dropdown-content">
+                <a href="#">Photo Album</a>
+                <a href="#Jounral">Jounral</a>
+                <a href="#Contact">Contact</a>
+                <a href="#about">About Me</a>
+                <a href="#" style="position:absolute;top:630px;font-size:16px">Your life is too short to live someone else's dream.</a>
+              </div>
+            </div>
+            <div class="background-left" style="position: absolute;left:200px;top:225px">Everthing about <br>Chen Yibo
+            <div id="hhh">(But everthing isn't real.)</div>
+            </div>
+        </div>
+        <div id="photo" style="position: absolute;left:700px;width:200px;font-size: 20px;top:50px; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;border-bottom-style: solid;border-bottom-color: #000">Photo Album</div>
+        <div class="Photo Album" style="position: absolute;left:700px;top:100px">
+            <img id="photo" src="07.jpg"/>
+        </div>
+        
+        <div class="scroll" style=" font: size 10px;
+        text-align: center;
+        position:absolute;
+        top:475px;
+        left:700px;
+        color: rgb(126, 126, 126);
+        background-color: rgb(255, 255, 255);
+        width:500px;
+        overflow:auto;" id="About Me">
+                除了一个小秘密，我只是一个极其平凡的人<br>
+                Other than a little secret, I'm just an ordinary person.<br>
+                &nbsp<br>
+                我张开双臂拥抱世界<br>
+                I embrace the world with open arms.<br>
+                世界也拥抱我<br>
+                And the world embraces me.<br>
+                &nbsp<br>
+                我经历的<br>
+                All that I have experienced<br>
+                或未经历的<br>
+                and that which I am yet to experience<br>
+                都是我想表达的<br>
+                is what I want to express.<br>
+                &nbsp<br>
+                我自由，渴望交流<br>
+                I'm free-spirited and crave conversation.<br>
+                懂得与人相处<br>
+                I seek to understand how best to communicate with others<br>
+                但不强求共鸣<br>
+                Whilst never seeking recognition.<br>
+                &nbsp<br>
+                我勇敢，热爱和平<br>
+                I'm brave, peace-loving.<br>
+                总奋不顾身的怀疑<br>
+                Lack confidence in this<br>
+                怀疑...我在哪里，该去哪里<br>
+                where am I, and where should I go.<br>
+                &nbsp<br>
+                童年，或许还有过些...<br>
+                In childhood, perhaps...<br>
+                可和你一样<br>
+                But just like you<br>
+                小时候的事，只有大人才记得<br>
+                The story of childhood is left only in the memory of adults.<br>
+                &nbsp<br>
+                我健康，偶尔脆弱<br>
+                I'm strong, sometimes vunlnerable.<br>
+                但从不缺少照顾<br>
+                But never lack care.<br>
+                也尝过<br>
+                I have tasted love<br>
+                爱情的滋味，真正的爱情<br>
+                the taste of true love.<br>
+                &nbsp<br>
+                如果不联络<br>
+                If I do not make myself known<br>
+                朋友们并不知道我在哪里<br>
+                friends will have no idea where to find me.<br>
+                但他们明白<br>
+                But they know that<br>
+                除了这个小秘密<br>
+                other than this small secret<br>
+                我只是<br>
+                I'm just<br>
+                一个极其平凡的人<br>
+                an ordinary person.<br>
+                &nbsp<br>
+                我有时<br>
+                Sometimes,<br>
+                会张开双臂拥抱世界<br>
+                I embrace the world with open arms.<br>
+                &nbsp<br>
+                有时<br>
+                And sometimes,<br>
+                我只想一个人<br>
+                I hope to leave the world alone.<br>
+            </div>
+        <div id='about'>About Me</div>
+        <div class="photo-background"></div>
+        <div id="Contact">
+            <span style="border-bottom-style: solid;border-bottom-color: black;width:200px">Contact</span>
+            <div class="contact-content">
+                <div style="position:absolute;left:50px">
+                <div>&nbsp</div>
+                <span id="mail">Mail:</span>
+                <span id="mail-content">notrealaddress@163.com</span>
+                <div>&nbsp</div>
+                <span id="Tel">Tel:<br></span>
+                <span id="Tell-content">1555555555551</span>
+                </div>
+            </div>
+        </div>
+        <div id="Jounral" style="border-bottom-style: solid;border-bottom-color: black;width:200px;position:absolute;left:700px;top:2120px;font-size:20px">Journal
+        <div class="jounrals" style="position: absolute;left:50px;font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;font-size:16px">
+            <div>&nbsp</div>
+            <a href="https://site.douban.com/122554/">方所</a><br>
+            <div>&nbsp</div>
+            <a href="https://site.douban.com/citylights/">城市之光</a>
+            <div>&nbsp</div>
+            <a href="https://site.douban.com/yehaizi23215/">野孩子</a>
+            <div>&nbsp</div>
+            <a href="https://site.douban.com/weiwei/">张玮玮</a>
+            <div>&nbsp</div>
+            <a href="https://site.douban.com/blinde/">吴维纯</a>
+            <div>&nbsp</div>
+            <div>&nbsp</div>
+            
+        </div>
+        </div>
+        <a href="#" id="way" style="position:fixed;left:1450px;width:100px;height: 100%;background-color: black;top:0px;text-align: center;color:white">
+            <div style="position: fixed;left:1465px;top:300px">The<br>
+            Way<br>
+            Bakc<br>
+            To<br>
+            The<br>
+            Start</div>
+            </a>
+    </body>
+</html>
